@@ -19,9 +19,9 @@ public class TextProcessingServlet extends HttpServlet {
         PrintWriter writer = response.getWriter();
 
         writer.println(text);
-        writer.println("Ilość słów: "+TextProcessor.getCharAmount(text));
-        writer.println("Ilość znaków: "+TextProcessor.getCharAmountWithoutSpace(text));
-        writer.println("Ilość znaków (bez spacji): "+TextProcessor.getWordCount(text));
+        writer.println("Ilość słów: "+TextProcessor.getWordCount(text));
+        writer.println("Ilość znaków: "+TextProcessor.getCharAmount(text));
+        writer.println("Ilość znaków (bez spacji): "+TextProcessor.getCharAmountWithoutSpace(text));
         writer.println("Palindrom: "+TextProcessor.isPalindrome(text));
     }
 
